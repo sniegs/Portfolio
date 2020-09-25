@@ -25436,6 +25436,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Highlighted Joke"), /*#__PURE__*/_react.default.createElement(Joke, {
         joke: this.state.joke
       }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("h3", null, "Want ten new Jokes?"), /*#__PURE__*/_react.default.createElement("button", {
+        className: "button",
         onClick: this.getRandomJokes
       }, "Click me!"), this.state.jokes.map(function (joke) {
         return /*#__PURE__*/_react.default.createElement(Joke, {
@@ -25655,7 +25656,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52252" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53278" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
