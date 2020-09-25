@@ -26,10 +26,10 @@ class App extends Component {
                 <p>I live in Nuneaton, and I am learning app development through Udemy courses.</p>
                 <p>Most of my experience in programming comes from C# and C++, but I am slowly moving towards JavaScript</p>
                 <p>Besides coding, I also love gaming and spending time with friends</p>
-                <button onClick = {this.toggleDisplayBio}>Show less</button>
+                <button className = "button" onClick = {this.toggleDisplayBio}>Show less</button>
             </div>) : (
                 <div>
-                    <button onClick={this.toggleDisplayBio}>Read more</button>
+                    <button className = "button" onClick={this.toggleDisplayBio}>Read more</button>
                 </div>
                 )
             }

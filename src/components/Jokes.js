@@ -39,7 +39,7 @@ class Jokes extends Component {
         <Joke joke={this.state.joke} />
         <hr />
         <h3>Want ten new Jokes?</h3>
-        <button onClick={this.getRandomJokes}>Click me!</button>
+        <button className = "button" onClick={this.getRandomJokes}>Click me!</button>
         {this.state.jokes.map((joke) => (
           <Joke key={joke.id} joke={joke} />
         ))}

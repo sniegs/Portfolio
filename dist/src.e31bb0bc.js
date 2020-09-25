@@ -25436,6 +25436,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Highlighted Joke"), /*#__PURE__*/_react.default.createElement(Joke, {
         joke: this.state.joke
       }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("h3", null, "Want ten new Jokes?"), /*#__PURE__*/_react.default.createElement("button", {
+        className: "button",
         onClick: this.getRandomJokes
       }, "Click me!"), this.state.jokes.map(function (joke) {
         return /*#__PURE__*/_react.default.createElement(Joke, {
@@ -25528,8 +25529,10 @@ var App = /*#__PURE__*/function (_Component) {
         alt: "profile",
         className: "profile"
       }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello!"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Arnold."), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I'm always looking forward to learning more and gaining more experience!"), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I live in Nuneaton, and I am learning app development through Udemy courses."), /*#__PURE__*/_react.default.createElement("p", null, "Most of my experience in programming comes from C# and C++, but I am slowly moving towards JavaScript"), /*#__PURE__*/_react.default.createElement("p", null, "Besides coding, I also love gaming and spending time with friends"), /*#__PURE__*/_react.default.createElement("button", {
+        className: "button",
         onClick: this.toggleDisplayBio
       }, "Show less")) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+        className: "button",
         onClick: this.toggleDisplayBio
       }, "Read more")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Jokes.default, null));
     }
@@ -25653,7 +25656,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56892" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53278" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
