@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Header from './Header';
 
 const Joke = ({ joke: { setup, punchline } }) => (
   <p style={{ margin: 20 }}>
@@ -7,19 +8,31 @@ const Joke = ({ joke: { setup, punchline } }) => (
 );
 
 const fetchJoke = async () => {
-  let response = await fetch(
-    "https://official-joke-api.appspot.com/random_joke"
-  );
-  let joke = await response.json();
-  return joke;
+  try{
+    let response = await fetch(
+      "https://official-joke-api.appspot.com/random_joke"
+    );
+    let joke = await response.json();
+    return joke;
+  }
+  catch(error){
+    alert(error.message);
+  }
+  
 };
 
 const fetchRandomJokes = async () => {
-  let response = await fetch(
-    "https://official-joke-api.appspot.com/random_ten"
-  );
-  let jokes = await response.json();
-  return jokes;
+  try{
+    let response = await fetch(
+      "https://official-joke-api.appspot.com/random_ten"
+    );
+    let jokes = await response.json();
+    return jokes;
+  }
+  catch(error){
+    alert(error.message);
+  }
+
 };
 
 class Jokes extends Component {
@@ -39,7 +52,9 @@ class Jokes extends Component {
         <Joke joke={this.state.joke} />
         <hr />
         <h3>Want ten new Jokes?</h3>
-        <button className = "button" onClick={this.getRandomJokes}>Click me!</button>
+        <button className="button" onClick={this.getRandomJokes}>
+          Click me!
+        </button>
         {this.state.jokes.map((joke) => (
           <Joke key={joke.id} joke={joke} />
         ))}
